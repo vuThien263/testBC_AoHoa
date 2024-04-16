@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mạch Điện</title>
+    <link rel="shortcut icon" href="../assets/images/Logo.png">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../LoaiSP/CSS_SanPham.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/icons/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="../assets/bootstrap-5.3.0-alpha3-dist/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+</head>
+
+<body>
+   <div class="hero">
+        <div class="">
+            <header>
+                <div class="nav">
+                        <div class="header-introduce">
+                            <div class="header-shop">
+                                <img src="../assets/images/Logo.png" alt="">
+                            </div>
+                            <div class="header-timkiem">
+                                <p style="color: white; margin-left: -80px;">Arduino, module, nguồn, cảm biến, ic...</p>
+                                <div class="TimKiem">
+                                    <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+                                    <i class="fas fa-search" style="font-size: 35px;"></i>
+                                </div>
+                            </div>
+                            <div class="header-list">
+                            
+                                <a href="../TaiKhoan/formDangNhap.html" class="login-link">
+                                    <i class="fas fa-user-alt white" style="font-size: 25px; color: white;"></i><br> Đăng nhập
+                                </a>
+                                <a href="#" class="login-link">
+                                    <i class="fas fa-shopping-cart" style="font-size: 25px; color: white"></i><br> Giỏ hàng
+                                </a>
+                            </div>
+                         </div>
+                </div> 
+            </header>
+            <div class="header-menu">
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="../index.html"><i class="fas fa-home"></i>Trang chủ</i><strong>|</strong></a></li>
+                        <li><a href="#">Giới thiệu</i><strong>|</strong></a></li>
+                        <li><a href="#">Sản phẩm <i class="fas fa-caret-up fa-rotate-180"></i><strong>|</strong></a>
+                            <ul>
+                                <li><a href="../LoaiSP/MachDien.html">Mạch điện</a></li>
+                                <li><a href="../LoaiSP/CamBien.html">Cảm biến</a></li>
+                                <li><a href="../LoaiSP/LKDT.html">Linh kiện điện tử</a></li>
+                                <li><a href="../LoaiSP/Modum.html">Modum</a></li>
+                                <li><a href="../LoaiSP/PhuKien.html">Phụ kiện và dụng cụ</a></li>
+                                <li><a href="../LoaiSP/RobotVaCN.html">Robot và công nghệ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tin tức</i><strong>|</strong></a></li>
+                        <li><a href="#">Liên hệ</a></li>      
+                    </ul>    
+                </div>
+            </div>      
+        </div>
+
+         <div class="container">
+                            <!--CONTENT-->
+                <div class="main">
+                    <div class="main_left">
+                        <div class="DanhMuc_SP">
+                            <ul class="list-group" style="border-color: black;">
+                                <li class="list-group-item active"><h6 style="text-align: center;">DANH MỤC SẢN PHẨM</h6></li>
+                                <li class="list-group-item"><i class="fas fa-check-circle green"></i> <a href="#">Cảm biến</a></li>
+                                <li class="list-group-item"><i class="fas fa-check-circle green"></i> <a href="#">Linh kiện điện tử</a></li>
+                                <li class="list-group-item"><i class="fas fa-check-circle green"></i> <a href="#">Mạch điện</a></li>
+                                <li class="list-group-item"><i class="fas fa-check-circle green"></i> <a href="#">Module</a></li>
+                                <li class="list-group-item"><i class="fas fa-check-circle green"></i> <a href="#">Phụ kiện & dụng cụ</a></li>
+                                <li class="list-group-item"><i class="fas fa-check-circle green"></i> <a href="#">Robot & công nghệ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="main_left_content">
+                            <ul class="list-group" style="border-color: black;">
+                                <li class="list-group-item active red"><h6 style="text-align: center;">SẢN PHẨM KHUYẾN MÃI</h6></li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/SPKM-1.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Mạch khuếch đại âm thanh bluetooth XY-P15 2x15W</a>
+                                    <p class="gia-spkm"><del>99.000đ</del> 90.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/SPKM-2.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Công tắc cảm biến quá dòng AC 5A</a>
+                                    <p class="gia-spkm"><del>109.000đ</del> 99.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/SPKM-3.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Mạch tăng áp có hiển thị 6A</a>
+                                    <p class="gia-spkm"><del>79.000đ</del> 69.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/SPKM-4.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Mạch tăng áp DC XL6019 5A V2.0</a>
+                                    <p class="gia-spkm"><del>159.000đ</del> 139.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/SPKM-5.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Công tắc gạc 6 chân 6A (2 trạng thái)</a>
+                                    <p class="gia-spkm"><del>59.000đ</del> 39.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/SPKM-6.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Bộ vỏ mica cho cảm biến nhiệt độ relay chỉnh mức XH-W120</a>
+                                    <p class="gia-spkm"><del>25.000đ</del> 20.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/SPKM-7.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Dây cáp (cable) Node MCU, dây sạc micro usb</a>
+                                    <p class="gia-spkm"><del>19.000đ</del> 9.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/SPKM-8.png " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Cặp led thu phát hồng ngoại 5mm</a>
+                                    <p class="gia-spkm"><del>30.000đ</del> 20.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/SPKM-9.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Bộ tua vít chất lượng cao</a>
+                                    <p class="gia-spkm"><del>99.000đ</del> 79.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/SPKM-10.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Giấy in mạch, giấy in chuyển nhiệt chuyên dụng</a>
+                                    <p class="gia-spkm"><del>79.000đ</del> 69.000đ</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="main_left_content">
+                            <ul class="list-group" style="border-color: black;">
+                                <li class="list-group-item active red"><h6 style="text-align: center;">SẢN PHẨM MỚI</h6></li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/MD-1.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Vỏ mica bảo vệ Arduino Mega 2560</a>
+                                    <p class="gia-spnew">17.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/MD-2.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Arduino MEGA2560 R3 CH340</a> 
+                                    <p class="gia-spnew">180.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/MD-3.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Arduino MEGA2560 R3 Atmega16u2</a> 
+                                    <p class="gia-spnew">218.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/MD-4.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Arduino Ethernet Shield</a> 
+                                    <p class="gia-spnew">125.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/MD-5.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Arduino ATTiny85 USB Digispark</a> 
+                                    <p class="gia-spnew">52.000đ</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/MD-6.jpg " width="60px" alt="" class="img-km">
+                                    <a href="#" class="spkm-link">Mạch điện Tử Và Khoa Học Công Nghệ</a> 
+                                    <p class="gia-spnew">980.00đ</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="main_left_content">
+                            <ul class="list-group" style="border-color: black;">
+                                <li class="list-group-item active red"><h6 style="text-align: center;">BÀI VIẾT MỚI</h6></li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/BV-1.jpg " width="60px" alt="" class="img-km">
+                                    <p href="#" class="content-baiviet">Anh em đạo diễn Russo: Sức hút của "Avengers: Endgame quá lớn, không cần bỏ tiền marketing</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/BV-2.jpg " width="60px" alt="" class="img-km">
+                                    <p href="#" class="content-baiviet" >Tổng thống Trump: “Tôi sẽ không bao giờ bước vào trong một chiếc xe tự lái”</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/BV-3.jpg " width="60px" alt="" class="img-km">
+                                    <p href="#" class="content-baiviet" >Facebook bổ sung thêm tab Gaming vào ứng dụng trên smartphone</p>
+                                </li>
+                                <li class="list-group-item" id="SPKM">
+                                    <img src="../assets/images/BV-4.jpg " width="60px" alt="" class="img-km">
+                                    <p href="#" class="content-baiviet" >Đôi điều về gốm trên Galaxy S10</p>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="main_right">
+                        <div class="main_right_content">
+                            <div class="SP_right">
+                                <p>Hiển thị tất cả kết quả</p>
+                                    <select name="SapXep" id="MachDien">
+                                        <option value="1">Thứ tự theo mức độ phổ biến</option>
+                                        <option value="2">Thứ tự theo điểm đánh giá</option>
+                                        <option value="3">Mới nhất</option>
+                                        <option value="4">Thứ tự theo giá: thấp đến cao</option>
+                                        <option value="5">Thứ tự theo giá: cao đến thấp</option>
+                                        <option value="6">Theo thứ tự mặc định</option>
+                                    </select> 
+                            </div>
+                            <!-- Các sản phẩm của danh mục mạch điện -->
+                            <div class="main__right-content-list">
+                                <!-- Mạch điện 1 -->
+                                <div class="main__right-content-items">
+                                    <a href="#" class="main__right-content-link">
+                                        <img src="../assets/images/MD-1.jpg" alt="" class="main__right-content-img" />
+                                        <div class="main__right-content-title">Vỏ mica bảo vệ Arduino Mega 2560</div>
+                                    </a>
+                                    <span class="main__right-content-price">17.000đ </span>
+                                </div>
+                                <!-- Mạch điện 2 -->
+                                <div class="main__right-content-items">
+                                    <a href=".#" class="main__right-content-link">
+                                        <img src="../assets/images/MD-2.jpg" alt="" class="main__right-content-img" />
+                                        <div class="main__right-content-title">Arduino MEGA2560 R3 CH340</div>
+                                    </a>
+                                    <span class="main__right-content-price">180.000đ</span>
+                                </div>
+                                <!-- Mạch điện 3 -->
+                                <div class="main__right-content-items">
+                                    <a href=".#" class="main__right-content-link">
+                                        <img src="../assets/images/MD-3.jpg" alt="" class="main__right-content-img" />
+                                        <div class="main__right-content-title">Arduino MEGA2560 R3 Atmega16u2</div>
+                                    </a>
+                                    <span class="main__right-content-price">218.000đ</span>
+                                </div>
+                                <!-- Mạch điện 4 -->
+                                <div class="main__right-content-items">
+                                    <a href=".#" class="main__right-content-link">
+                                        <img src="../assets/images/MD-4.jpg" alt="" class="main__right-content-img" />
+                                        <div class="main__right-content-title">Arduino Ethernet Shield</div>
+                                    </a>
+                                    <span class="main__right-content-price">125.000đ</span>
+                                </div>
+                                <!-- Mạch điện 5 -->
+                                <div class="main__right-content-items">
+                                    <a href=".#" class="main__right-content-link">
+                                        <img src="../assets/images/MD-5.jpg" alt="" class="main__right-content-img" />
+                                        <div class="main__right-content-title">Arduino ATTiny85 USB Digispark</div>
+                                    </a>
+                                    <span class="main__right-content-price">52.000đ</span>
+                                </div>
+                                <!-- Linh kiện điện tử 2 -->
+                                <div class="main__right-content-items">
+                                    <a href=".#" class="main__right-content-link">
+                                        <img src="../assets/images/LKDT-2.jpg" alt="" class="main__right-content-img" />
+                                        <div class="main__right-content-title">Cảm Biến Áp Suất Không Khí BMP180</div>
+                                    </a>
+                                    <span class="main__right-content-price">50.000đ</span>
+                                </div>
+                                 <!-- Cảm biến 5 -->
+                                 <div class="main__right-content-items">
+                                    <a href=".#" class="main__right-content-link">
+                                        <img src="../assets/images/CB-5.jpg" alt="" class="main__right-content-img" />
+                                        <div class="main__right-content-title">Cảm Biến Âm Thanh Tích Hợp Amply MAX9812</div>
+                                    </a>
+                                    <span class="main__right-content-price">50.000đ</span>
+                                </div>
+                                 <!-- Module 3 -->
+                                 <div class="main__right-content-items">
+                                    <a href=".#" class="main__right-content-link">
+                                        <img src="../assets/images/Module-3.jpg" alt="" class="main__right-content-img" />
+                                        <div class="main__right-content-title">Bộ cảm biến nhiệt độ Relay chỉnh mức XHW1411</div>
+                                    </a>
+                                    <span class="main__right-content-price">185.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div  class="main_bottom" style="clear: both;">
+                <div class="bottom_list_content">
+                    <img src="../assets/images/KT-1.png" alt="Hình ảnh minh họa cho chức năng" />
+                    <br />
+                    <strong class="content-strong">Lắp đặt chuyên nghiệp</strong>
+                    <br />
+                    <span class="content-title">Đội ngũ lắp đặt giàu kinh nghiệm</span>
+                </div>
+                <div class="bottom_list_content">
+                    <img src="../assets/images/KT-2.png" alt="Hình ảnh minh họa cho chức năng" />
+                    <br />
+                    <strong class="content-strong">Giao nhận tiện lợi</strong>
+                    <br />
+                    <span class="content-title">Giao nhận trong ngày nhanh</span>
+                </div>
+                <div class="bottom_list_content">
+                    <img src="../assets/images/KT-3.png" alt="Hình ảnh minh họa cho chức năng" />
+                    <br />
+                    <strong class="content-strong">Thanh toán linh hoạt</strong>
+                    <br />
+                    <span class="content-title">Phương thức thanh toán đa dạng</span>
+                </div>
+                <div class="bottom_list_content">
+                    <img src="../assets/images/KT-4.png" alt="Hình ảnh minh họa cho chức năng" />
+                    <br />
+                    <strong class="content-strong">Hậu mãi chu đáo</strong>
+                    <br />
+                    <span class="content-title">Chăm sóc khách hàng tận tình</span>
+                </div>
+            </div>
+        </div>
+              <!--FOOTER-->
+              <footer>  
+                <div class="footer">
+                    <div class="footer-content">
+                        <div class="footer-content-list1">
+                            <div class="footer-img">
+                                <img  src="assets/images/Logo_footer.png" alt="" style="width: 280px; margin-bottom: 10px; margin-left: 70px;">  
+                            </div>      
+                            <div class="footer-text">
+                                <p>
+                                    Cửa hàng của chúng tôi luôn đặt mình vào vị trí của 
+                                    khách hàng để hiểu được bạn đang gặp khó khăn gì? 
+                                    Các cửa hàng hiện nay đang gặp khó khăn về quản lý 
+                                    và vận hàng website của mình. Chưa tìm được đối tác 
+                                    quan trọng trong trách nhiệm quản lý website của bạn.
+                                </p>
+                            </div>
+                        </div>
+                            
+                        <div class="footer-content-list3">
+                            <p style="font-size: 18px;font-weight: bold; position: relative; margin-bottom: 20px;">ĐỊA CHỈ</p>
+                            <ul style="font-size: 14px;">
+                                <li><i class="fas fa-map-marker-alt" style="color: #0d4065;"></i><span> (Trụ sở chính)</span> 140 Lê Trọng Tấn,Tây Thạnh,Tân Phú,TP.HCM</li>
+                                <br>
+                                <li><i class="fas fa-map-marker-alt" style="color: #0d4065;"></i><span> (Chi nhánh 1)</span> 319 Lý Thường Kiệt,Phường 15,Quận 11,TP.HCM</li>
+                                <br>
+                                <li><i class="fas fa-map-marker-alt" style="color:#0d4065;"></i><span> (Chi nhánh 2)</span> 506 Trường Chinh,Phường 13,Tân Bình,TP.HCM</li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer-content-list4">
+                            <p style="font-size: 18px;font-weight: bold;">NHÂN VIÊN TƯ VẤN</p>
+                            <ul style="font-size: 14px;">
+                                <li><i class="fas fa-phone"></i> 0372673566</li>
+                                <li><i class="fas fa-envelope"></i> linhkiendientu&gmail.com</li>
+                            </ul>
+                            <div class="footer-icons">
+                                <ul>
+                                    <li><a href="">
+                                        <i class="fab fa-facebook"></i>
+                                    </a></li>
+                                    <li><a href="">
+                                        <i class="fab fa-twitter"></i>
+                                    </a> </li>
+                                    <li><a href="">
+                                        <i class="fab fa-youtube"></i>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+             </footer>
+    <a id="back-to-top" href="#">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+   </div>
+</body>
+<script src="assets/javascrip/slideshow.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</html>

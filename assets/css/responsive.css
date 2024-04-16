@@ -1,0 +1,84 @@
+@media only screen and (max-width: 740px){
+    .main
+    {
+      
+    }
+   .header-timkiem,.main_left,.header-menu,.slideShow,.banner, .SP_right
+   {
+    display: none;
+   }
+   .header-introduce
+   {
+        width: 100%;
+        align-items: center;
+   }
+   .header-shop img
+   {  
+    width: 200px;
+   }
+   .main_right
+   {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+   }
+   .header-list {
+    font-size: 12px;
+    flex-direction: row;
+    margin-right: 25px;
+    }
+    .header-list a{
+        margin-right: 10px;
+    }
+    .header-list span
+    {
+        display: none;
+    }
+    .Menu_Mobile_Tab
+    {
+       display: none;
+    }
+    /* Hiện menu khi hover */
+   .header-introduce:hover
+   {
+       
+   }
+  
+
+   /*FOOTER NEK*/
+   .footer-content{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    }
+    .footer-content-list1{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-content-list1 img{
+        margin-right: 100px;
+    }
+    .footer-text{
+        margin-right: 180px;
+    }
+    .footer-content-list3{
+        width: 80%;
+        margin-left: 40px;
+    }
+    .footer-content-list3 p{
+        margin-left: 140px;
+    }
+    .footer-content-list4{
+        margin: 20px auto;
+    }
+    .footer-icons{
+    margin-left: -30px;
+    }
+
+}
+
+
+
+
+

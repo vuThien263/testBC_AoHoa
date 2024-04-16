@@ -1,0 +1,35 @@
+.Bottom_Menu_Mobile
+{
+    position:absolute;
+    z-index: 2000;
+    top: 45px;
+    left: 20px;
+    color: white;
+    display: none;
+}
+.Menu_Mobile_Tab
+{
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    padding-top: 30px;
+}
+.Menu_Mobile_Tab ul
+{
+    list-style-type: none;
+}
+.Menu_Mobile_Tab ul ul
+{
+    display: none;
+    position: relative;
+    left: -20px;
+}
+.Menu_Mobile_Tab ul li a
+{
+    text-decoration: none;
+	color: grey;
+	display: block;	
+	line-height: 40px;
+	border-bottom: 1px solid #FFF;
+	padding: 0 10px;
+}

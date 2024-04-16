@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THIET_KE_WEB</title>
+    <link rel="shortcut icon" href="../assets/images/Logo.png"/>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/main_mobile_tab.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/icons/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/fontawesome-free-6.0.0-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.3.0-alpha3-dist/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Lobster&family=Montserrat+Alternates:wght@900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap");
+      .form_login {
+        width: 100%;
+      }
+
+      .login {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center; /* căn giữa */
+        margin-top: 30px;
+        position: relative;
+      }
+      .suscessfull_DK,
+      .suscessfull_DN {
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 0px 0px 5px rgba(51, 255, 153, 0.5);
+        border-radius: 30px;
+        width: 25%;
+        margin-top: 10px;
+        height: 200px;
+        color: black;
+        font-size: 18px;
+        text-align: center;
+        padding: 30px 40px;
+        font-family: "Montserrat", sans-serif;
+      }
+      .TK {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 200px;
+      }
+      .trai {
+        width: 40%;
+        padding: 10px 60px;
+      }
+      label {
+        margin-bottom: 2px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 50px;
+        font-size: 16px;
+        margin: 10px 0px;
+      }
+      input[type="submit"] {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+      .phai {
+        width: 40%;
+        padding: 10px 60px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: rgb(222, 74, 74);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="background-color: #f3f5f7">
+      <header class="header" style="padding: 0">
+        <div class="header-shop">
+          <img src="../assets/images/Logo.png" alt="" />
+        </div>
+        <div class="header-timkiem">
+          <p style="color: white">Arduino, module, nguồn, cảm biến, ic...</p>
+          <div class="TimKiem">
+            <input type="text" placeholder="Nhập từ khóa tìm kiếm" />
+            <i class="fas fa-search" style="font-size: 35px"></i>
+          </div>
+        </div>
+        <div class="header-list">
+          <a href="#" class="login-link">
+            <i
+              class="fas fa-user-alt white"
+              style="font-size: 25px; color: white"
+            ></i
+            ><br />
+            Đăng nhập
+          </a>
+
+          <a href="#" class="login-link">
+            <i
+              class="fas fa-shopping-cart"
+              style="font-size: 25px; color: white"
+            ></i
+            ><br />
+            Giỏ hàng
+          </a>
+        </div>
+      </header>
+      <div class="header-menu">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="fas fa-home"></i>Trang chủ<strong>|</strong></a
+            >
+          </li>
+          <li>
+            <a href="#">Giới thiệu<strong>|</strong></a>
+          </li>
+          <li>
+            <a href="#"
+              >Sản phẩm <i class="fas fa-caret-up fa-rotate-180"></i
+              ><strong>|</strong></a
+            >
+            <ul>
+              <li><a href="LoaiSP/MachDien.html">Mạch điện</a></li>
+              <li><a href="#">Cảm biến</a></li>
+              <li><a href="#">Linh kiện điện tử</a></li>
+              <li><a href="#">Modum</a></li>
+              <li><a href="#">Phụ kiện và dụng cụ</a></li>
+              <li><a href="#">Robot và công nghệ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Tin tức<strong>|</strong></a>
+          </li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="form_login">
+        <div class="TK">TÀI KHOẢN</div>
+        <hr />
+        <div class="login">
+          <div class="trai">
+            <form id="myForm1" onclick="click()">
+              <h3>ĐĂNG NHẬP</h3>
+              <label for="name"> Địa chỉ email </label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Nhập email"
+              />
+              <span id="emailError" style="display: none; color: red"
+                >Email không hợp lệ!</span
+              >
+
+              <label for="password">Mật khẩu</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Nhập mật khẩu"
+              />
+              <span id="passwordError" style="display: none; color: red"
+                >Mật khẩu phải có ít nhất 6 ký tự!</span
+              >
+
+              <label for="checkbox">
+                <input type="checkbox" id="checkbox" name="checkbox" /> Ghi nhớ
+                mật khẩu<br /><br />
+
+                <input type="submit" value="ĐĂNG NHẬP" id="submit" />
+                <p style="padding: 10px 10px">Quên mật khẩu?</p>
+              </label>
+            </form>
+          </div>
+
+          <div class="phai">
+            <form id="myForm2" onclick="click()">
+              <h3>ĐĂNG KÝ</h3>
+              <label for="name"> Địa chỉ email </label>
+              <input
+                type="text"
+                id="create_email"
+                name="name"
+                placeholder="Nhập email"
+              /><br />
+              <span id="create_emailError" style="display: none; color: red"
+                >Email không hợp lệ!</span
+              >
+
+              <label for="password">Mật khẩu</label>
+              <input
+                type="password"
+                id="create_password"
+                name="password"
+                placeholder="Nhập mật khẩu"
+              /><br />
+              <span id="create_passwordError" style="display: none; color: red"
+                >Mật khẩu phải có ít nhất 6 ký tự!</span
+              >
+
+              <label for="confirm-password">Nhập lại mật khẩu</label>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                placeholder="Nhập lại mật khẩu"
+              />
+              <span id="confirm_passwordError" style="display: none; color: red"
+                >Mật khẩu sai!</span
+              >
+              <p style="color: gray">
+                Vui lòng không đưa tài khoản cho người khác!
+              </p>
+
+              <input type="submit" value="ĐĂNG KÝ" />
+            </form>
+          </div>
+          <div class="suscessfull_DK">
+            <i
+              class="fas fa-check-circle"
+              style="color: rgb(95, 209, 171); font-size: 45px"
+            ></i
+            ><br />
+            <h1 style="font-size: 30px">Thành công!</h1>
+            Tài khoản của bạn đã được tạo.
+          </div>
+          <div class="suscessfull_DN">
+            <i
+              class="fas fa-check-circle"
+              style="color: rgb(95, 209, 171); font-size: 45px"
+            ></i
+            ><br />
+            <h1 style="font-size: 30px">Đã đăng nhập!</h1>
+            Bạn đã đăng nhập thành công tài khoản của mình.
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <div class="footer-content">
+            <div class="footer-content-list1">
+              <img
+                src="../assets/images/Logo_footer.png"
+                alt=""
+                style="width: 300px; margin-bottom: 10px"
+              />
+
+              <p style="text-align: justify; color: grey; width: 400px">
+                Cửa hàng của chúng tôi luôn đặt mình vào vị trí của khách hàng
+                để hiểu được bạn đang gặp khó khăn gì? Các cửa hàng hiện nay
+                đang gặp khó khăn về quản lý và vận hàng website của mình. Chưa
+                tìm được đối tác quan trọng trong trách nhiệm quản lý website
+                của bạn.
+              </p>
+            </div>
+
+            <!-- <div class="footer-content-list2">
+                            <p style="font-size: 20px;font-weight: bold; position: relative; left: -19px;">DANH MỤC</p>
+                            <ul>
+                                <li><a href="#">Cảm biến</a></li>
+                                <li><a href="#">Linh kiện điện tử</a></li>
+                                <li><a href="#">Mạch điện</a></li>
+                                <li><a href="#">Module</a></li>
+                                <li><a href="#">Phụ kiện & Dụng cụ</a></li>
+                                <li><a href="#">Robot & Công nghệ</a></li>
+                            </ul>
+                        </div> -->
+
+            <div class="footer-content-list3">
+              <p
+                style="
+                  font-size: 20px;
+                  font-weight: bold;
+                  position: relative;
+                  left: -13px;
+                  margin-bottom: 20px;
+                "
+              >
+                ĐỊA CHỈ
+              </p>
+
+              <ul>
+                <li>
+                  <i class="fas fa-map-marker-alt" style="color: #0d4065"></i
+                  ><span> (Trụ sở chính)</span> 140 Lê Trọng Tấn,Tây Thạnh,Tân
+                  Phú,TP.HCM
+                </li>
+                <br />
+                <li>
+                  <i class="fas fa-map-marker-alt" style="color: #0d4065"></i
+                  ><span> (Chi nhánh 1)</span> 319 Lý Thường Kiệt,Phường 15,Quận
+                  11,TP.HCM
+                </li>
+                <br />
+                <li>
+                  <i class="fas fa-map-marker-alt" style="color: #0d4065"></i
+                  ><span> (Chi nhánh 2)</span> 506 Trường Chinh,Phường 13,Tân
+                  Bình,TP.HCM
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-content-list4">
+              <p style="font-size: 20px; font-weight: bold">NHÂN VIÊN TƯ VẤN</p>
+              <ul>
+                <li><i class="fas fa-phone"></i> 0372673566</li>
+                <li>
+                  <i class="fas fa-envelope"></i> linhkiendientu&gmail.com
+                </li>
+              </ul>
+              <div class="footer-icons">
+                <ul>
+                  <li>
+                    <a href="">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <a id="back-to-top" href="#">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+
+    <script>
+      const create_emailInput = document.getElementById("create_email");
+      const create_emailError = document.getElementById("create_emailError");
+      const create_passwordInput = document.getElementById("create_password");
+      const create_passwordError = document.getElementById(
+        "create_passwordError"
+      );
+      const confirm_passwordInput = document.getElementById("confirm_password");
+      const confirm_passwordError = document.getElementById(
+        "confirm_passwordError"
+      );
+      const show_successful_DK = document.querySelector(".suscessfull_DK");
+      const myForm2 = document.querySelector("#myForm2");
+      localStorage.clear();
+      let count = 0;
+
+      myForm2.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let create_email = create_emailInput.value.trim();
+        let create_password = create_passwordInput.value.trim();
+        let confirm_password = confirm_passwordInput.value.trim();
+        let emailFormat =
+          /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        let flag = true;
+
+        if (create_email == "") {
+          create_emailError.style.display = "block";
+          create_emailError.textContent = "Vui lòng nhập Email!";
+          flag = false;
+        } else {
+          if (!emailFormat.test(create_email)) {
+            create_emailError.textContent = "Email không hợp lệ!";
+            create_emailError.style.display = "block";
+            flag = false;
+          } else {
+            create_emailError.style.display = "none";
+          }
+        }
+
+        if (create_password == "") {
+          create_passwordError.textContent = "Vui lòng nhập mật khẩu!";
+          create_passwordError.style.display = "block";
+          flag = false;
+        } else if (create_password.length < 6) {
+          create_passwordError.textContent =
+            "Mật khẩu phải có ít nhất 6 ký tự!";
+          create_passwordError.style.display = "block";
+          flag = false;
+        } else {
+          create_passwordError.style.display = "none";
+        }
+
+        if (confirm_password == "") {
+          confirm_passwordError.textContent = "Vui lòng nhập lại mật khẩu!";
+          confirm_passwordError.style.display = "block";
+          flag = false;
+        } else if (confirm_password != create_password) {
+          confirm_passwordError.textContent = "Mật khẩu nhập lại không khớp!";
+          confirm_passwordError.style.display = "block";
+          flag = false;
+        } else {
+          confirm_passwordError.style.display = "none";
+        }
+
+        if (flag) {
+          show_successful_DK.style.display = "block";
+          setTimeout(() => {
+            show_successful_DK.style.display = "none";
+          }, 3000); // 3000ms = 3s
+
+          let dangKy = {
+            email: create_email,
+            password: create_password,
+          };
+          localStorage.setItem(
+            "email" + " " + count++,
+            JSON.stringify(dangKy)
+          );
+          create_emailInput.value = "";
+          create_passwordInput.value = "";
+          confirm_passwordInput.value = "";
+        }
+      });
+
+      const myForm1 = document.querySelector("#myForm1");
+
+      const show_successful_DN = document.querySelector(".suscessfull_DN");
+      const emailInput = document.getElementById("email");
+      const emailError = document.getElementById("emailError");
+      const passwordInput = document.getElementById("password");
+      const passwordError = document.getElementById("passwordError");
+      myForm1.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let email = emailInput.value.trim();
+        let password = passwordInput.value.trim();
+        let emailFormat =
+          /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        let flag = true;
+
+        if (email == "") {
+          emailError.style.display = "block";
+          emailError.textContent = "Vui lòng nhập Email!";
+          flag = false;
+        } else if (!emailFormat.test(email)) {
+          emailError.textContent = "Email không hợp lệ!";
+          emailError.style.display = "block";
+          flag = false;
+        } else {
+          emailError.style.display = "none";
+        }
+
+        if (password == "") {
+          passwordError.textContent = "Vui lòng nhập mật khẩu!";
+          passwordError.style.display = "block";
+          flag = false;
+        } else if (password.length < 6) {
+          passwordError.textContent = "Mật khẩu phải có ít nhất 6 ký tự!";
+          passwordError.style.display = "block";
+          flag = false;
+        } else {
+          passwordError.style.display = "none";
+        }
+
+        if (flag) {
+          let found = false;
+          for (let key in localStorage) {
+            let taiKhoan = JSON.parse(localStorage.getItem(key));
+            if (
+              taiKhoan != null &&
+              taiKhoan.email == emailInput.value &&
+              taiKhoan.password == passwordInput.value
+            ) {
+              found = true;
+              break;
+            }
+          }
+
+          if (found) {
+            show_successful_DN.style.display = "block";
+            setTimeout(() => {
+              show_successful_DN.style.display = "none";
+            }, 3000); // 3000ms = 3s
+          } else {
+            emailError.textContent = "Email hoặc mật khẩu không đúng";
+            emailError.style.display = "block";
+            passwordError.textContent = "Email hoặc mật khẩu không đúng";
+            passwordError.style.display = "block";
+          }
+          emailInput.value = "";
+          passwordInput.value = "";
+        }
+      });
+    </script>
+
+    <script src="../assets/javascrip/slideshow.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
